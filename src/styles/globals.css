@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream text-charcoal;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  @apply font-semibold;
+}
+
+h1 {
+  @apply text-display-lg;
+}
+
+h2 {
+  @apply text-display-md;
+}
+
+h3 {
+  @apply text-heading-lg;
+}
+
+h4 {
+  @apply text-heading-md;
+}
+
+p {
+  @apply text-body-md;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply px-6 py-3 bg-maroon text-white rounded-lg font-semibold hover:bg-burgundy transition-colors duration-300;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-soft-beige text-charcoal rounded-lg font-semibold hover:bg-gray-300 transition-colors duration-300;
+}
+
+.btn-outline {
+  @apply px-6 py-3 border-2 border-charcoal text-charcoal rounded-lg font-semibold hover:bg-charcoal hover:text-cream transition-colors duration-300;
+}
+
+/* Section spacing */
+.section {
+  @apply py-section px-6;
+}
+
+.section-lg {
+  @apply py-section-lg px-6;
+}
+
+/* Container */
+.container-max {
+  @apply max-w-7xl mx-auto;
+}
+
+/* Utilities */
+.gradient-text {
+  background: linear-gradient(135deg, #7A1F32 0%, #551322 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blur-backdrop {
+  backdrop-filter: blur(12px);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F3EA;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7A1F32;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #551322;
+}
